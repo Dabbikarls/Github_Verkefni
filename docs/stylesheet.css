@@ -5,21 +5,30 @@ body {
 	max-width: 60em;
 	margin:1em auto;
 	background: #466368;
+	font-family: 'Montserrat', sans-serif;
+
 
 }
 .texti {
 	grid-area:texti;
-	border-right:1px solid black;
+	border-right:0px solid black;
+	padding: 15px;
+	font-size: 20px;
+
+
 }
 .mynd {
 	grid-area: mynd;
+    width: 10px;
+    height: auto;
 }
 .wrapper {
 	display: grid;
 	grid-template-areas: "texti  mynd";
 	grid-template-columns: 2fr 1fr;
+
 }
 header {
 	text-align: center;
-
+	padding-bottom: 30px;
 }
