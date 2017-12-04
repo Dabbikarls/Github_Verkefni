@@ -36,3 +36,69 @@ header {
 li {
 	padding:3px;
 }
+ul {
+	list-style-type:none;
+}
+.slider
+        {
+            width: 800px;
+            height: 400px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .myndir
+        {
+            width: 2400px;
+            background-color: black;
+            height: 400px;
+            clear: both;
+            position: relative;
+            
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+        }
+        
+        .slider-mynd
+        {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+        
+        #slider-mynd-1:target ~ .myndir
+        {
+            left: 0px;
+        }
+        
+        #slider-mynd-2:target ~ .myndir
+        {
+            left: -800px;
+        }
+        
+        #slider-mynd-3:target ~ .myndir
+        {
+            left: -1600px;
+        }
+        
+        .takki
+        {
+            position: relative;
+            top: -20px;
+        }
+        
+        .slider-breyting
+        {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            background-color: black;
+        }
